@@ -1,6 +1,8 @@
 
-# MBTA_Live
-Create a Fabric Map with live MBTA bus locations, updating every 10 seconds.
+# Fabric Map with live Boston Metro data (MBTA)
+Want an easy-to-follow example of getting Real-time data into Fabric and visualize it with Fabric Maps? 
+
+This workbook will guide you through creating a Fabric Map with live MBTA bus locations, updating every 10 seconds.
 
 * I kept it simple with a Notebook that polls the feed and updates the Event stream - 
 * When you run the notebook, the stream starts. 
