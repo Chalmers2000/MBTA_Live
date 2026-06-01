@@ -97,6 +97,8 @@ while True:
     time.sleep(15) 
 ```
 
+Here's what your notebook looks like while it's running. 
+You'll see a steady stream of updates in the log underneath the code cell:
 
 ![Notebook Running](MBTA_Images/3_Notebook_running.jpg)
 
@@ -115,6 +117,8 @@ Connect the flowing Eventstream to your Eventhouse.
 7. In the data inspector, ensure **Nested levels** is set to **1**. You should see the raw JSON. Click **Finish**. Data is now landing in your database.
 
 
+Here is the new Eventhouse configuration (on the right): 
+
 ![Eventstream Route](MBTA_Images/4_EventStream_route.jpg)
 
 ## Step 5: Create the Kusto Function
@@ -123,6 +127,8 @@ Instead of writing a complex query directly in the map visual, we save the parsi
 1. Go to your Workspace and open your `TransitDemo_EH` KQL Database.
 2. Click **Explore your data** or open a new **KQL Queryset**.
 3. Paste the following command into the query editor and click **Run**:
+4. Notice that the Queryset is creating the Function - Fabric Maps no longer visualizes querysets, it visualizes functions.
+5. In the next step you will add the function as a map layer
 
 ```kusto
 .create-or-alter function with (docstring = "Returns latest MBTA vehicle locations", folder = "Transit") GetLiveBuses() {
