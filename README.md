@@ -1,5 +1,5 @@
 
-# Fabric Map with live Boston Metro data (MBTA)
+# Fabric Map with real-time Boston Metro data (MBTA)
 Want an easy-to-follow example of getting Real-time data into Fabric and visualize it with Fabric Maps? 
 
 This workbook will guide you through creating a Fabric Map with live MBTA bus locations, updating every 10 seconds.
